@@ -24,7 +24,7 @@ spec:
               app.kubernetes.io/name: demo-app
       containers:
         - name: app
-          image: ghcr.io/yoanbernabeu/demo-app:placeholder
+          image: ghcr.io/yoanbernabeu/demo-app:4a7610328b3482dc7b17c97cf0901bec8e77e769
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
