@@ -1,0 +1,14 @@
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: demo-app
+  namespace: demo-app
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`demo.yoandub.fr`)
+      kind: Rule
+      services:
+        - name: demo-app
+          port: 80
